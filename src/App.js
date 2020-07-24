@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route, Link } from 'react-router-dom' // from node_modules
 import Form from './Form'
 import Home from './Home'
 import * as yup from 'yup'
-import formSchema from './validation/FormSchema'
+import FormSchema from './validation/FormSchema'
 
 const initialFormValues = {
   name: '',
