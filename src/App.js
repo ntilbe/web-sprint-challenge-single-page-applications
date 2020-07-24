@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from 'react-router-dom'
 import Form from './Form'
 import Home from './Home'
@@ -30,9 +30,9 @@ const App = () => {
   const [formErrors, setFormErrors] = useState(initialFormErrors)
 
   const addOrder = newOrder => {
-    setOrders([newOrder])
+    setOrders(newOrder)
     setFormValues(initialFormValues)
-    console.log(...orders)
+    console.log(newOrder)
 
   }
 
