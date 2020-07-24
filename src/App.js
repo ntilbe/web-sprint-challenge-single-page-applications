@@ -32,6 +32,8 @@ const App = () => {
   const addOrder = newOrder => {
     setOrders([newOrder])
     setFormValues(initialFormValues)
+    console.log(...orders)
+
   }
 
   const inputChange = (name, value) => {
@@ -60,10 +62,7 @@ const App = () => {
   const checkboxChange = (name, isChecked) => {
     setFormValues({
       ...formValues,
-      hobbies: {
-        ...formValues.hobbies,
-        [name]: isChecked,
-      }
+      [name]: isChecked 
     })
   }
 

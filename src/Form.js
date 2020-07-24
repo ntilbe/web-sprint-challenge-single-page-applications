@@ -40,7 +40,7 @@ const Form = (props) => {
             <label>Size:&nbsp;
           <select
                     onChange={onInputChange}
-                    value="{values.role}"
+                    value={values.size}
                     name='size'
                 >
                     <option value=''>- Select an option -</option>
@@ -73,8 +73,8 @@ const Form = (props) => {
           <input
                         type="checkbox"
                         name='pineapple'
-                    // checked={values.hobbies.coding === true}
-                    // onChange={onCheckboxChange}
+                    checked={values.pineapple === true}
+                    onChange={onCheckboxChange}
                     />
                 </label>
 
@@ -82,16 +82,16 @@ const Form = (props) => {
           <input
                         type="checkbox"
                         name='bacon'
-                    // checked={values.hobbies.coding === true}
-                    // onChange={onCheckboxChange}
+                    checked={values.bacon === true}
+                    onChange={onCheckboxChange}
                     />
                 </label>
             </div>
 
             <label>Special Instructions&nbsp;
           <input
-                    value="{values.username}"
-                    // onChange="{onInputChange}"
+                    value={values.instructions}
+                    onChange={onInputChange}
                     name='instructions'
                     type='text'
                 />
